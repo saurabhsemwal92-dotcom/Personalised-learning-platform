@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Personalized Learning</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+  <h1>Welcome, <span id="userName"></span></h1>
+  <button id="logoutBtn">Logout</button>
+</header>
+
+<nav>
+  <button id="materialsBtn">Materials</button>
+  <button id="quizBtn">Quiz</button>
+  <button id="dashboardBtn">Dashboard</button>
+</nav>
+
+<main>
+  <!-- Materials Section -->
+  <section id="materialsSection" style="display:none">
+    <h2>Interactive Materials</h2>
+    <label>Subject:
+      <select id="subjectSelect">
+        <option value="Math">Math</option>
+        <option value="Physics">Physics</option>
+        <option value="Computer">Computer</option>
+        <option value="English">English</option>
+        <option value="General">General</option>
+      </select>
+    </label>
+    <input type="text" id="topicInput" placeholder="Enter topic">
+    <button id="searchTopic">Search Online</button>
+
+    <h3>Your Notes</h3>
+    <textarea id="topicNotes" placeholder="Write your notes here..." rows="6" cols="50"></textarea>
+    <button id="saveNotes">Save Notes</button>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quizSection" style="display:none">
+  <h2>Quiz</h2>
+  <label>Subject:
+    <select id="quizSubject">
+      <option value="All">All</option>
+      <option value="Math">Math</option>
+      <option value="Physics">Physics</option>
+      <option value="Computer">Computer</option>
+      <option value="English">English</option>
+      <option value="General">General</option>
+    </select>
+  </label>
+  <label>Number of Questions: 
+    <select id="numQ">
+      <option value="5">5</option>
+      <option value="7">7</option>
+      <option value="10">10</option>
+    </select>
+  </label>
+  <button id="startQuizBtn">Start Quiz</button>
+  <form id="quizForm" style="display:none"></form>
+  <div id="quizResult" style="display:none"></div>
+</section>
+
+
+  <!-- Dashboard Section -->
+  <section id="dashboardSection" style="display:none">
+    <h2>Dashboard</h2>
+    <canvas id="scoreChart" width="400" height="200"></canvas>
+    <div id="pastResults"></div>
+  </section>
+</main>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

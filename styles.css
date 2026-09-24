@@ -1,0 +1,118 @@
+/* Body & Header */
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background: #f0f2f5; 
+}
+header { 
+  background: #4b6cb7; 
+  color: white; 
+  padding: 15px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+header h1 { 
+  margin: 0; 
+  font-size: 22px; 
+}
+
+/* Navigation Buttons */
+nav button { 
+  margin-left: 5px; 
+  padding: 8px 12px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  background: #4b6cb7; 
+  color: white; 
+  font-size: 1rem; 
+}
+
+/* Main Section */
+main { padding: 20px; }
+section { min-height: 300px; }
+
+/* Auth Box - Centered */
+#authBox { 
+  max-width: 400px; 
+  margin: 100px auto; 
+  background: #fff; 
+  padding: 40px; 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+  border-radius: 10px; 
+  text-align: center; 
+  font-size: 1.1rem; 
+  display: block; 
+}
+
+/* Auth Inputs & Buttons */
+#authBox input { 
+  display: block; 
+  margin: 12px auto; 
+  padding: 10px; 
+  width: 90%; 
+  font-size: 1rem; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+#authBox button { 
+  width: 60%; 
+  padding: 12px; 
+  margin-top: 15px; 
+  font-size: 1rem; 
+  border-radius: 5px; 
+  background: #4b6cb7; 
+  color: white; 
+  cursor: pointer; 
+}
+
+/* Auth Headings & Links */
+#authBox h2 { 
+  font-size: 1.8rem; 
+  margin-bottom: 20px; 
+}
+#authBox p { 
+  margin-top: 15px; 
+  font-size: 1rem; 
+}
+
+/* Quiz */
+.quiz-question { 
+  border: 1px solid #ccc; 
+  padding: 12px; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  background: #fafafa; 
+}
+.options label { display: block; margin: 5px 0; }
+
+/* Materials */
+.material { 
+  border: 1px dashed #888; 
+  padding: 10px; 
+  margin: 5px 0; 
+  border-radius: 5px; 
+}
+
+/* Quiz Result / Past Results */
+.result { 
+  border: 1px solid #ccc; 
+  padding: 5px; 
+  margin: 3px 0; 
+  border-radius: 5px; 
+}
+/* Nav buttons spacing */
+nav {
+  margin: 20px 0; /* Add space below nav */
+}
+nav button {
+  margin-right: 10px;
+  margin-bottom: 10px; /* prevent overlap */
+}
+
+/* Sections hidden by default, JS will show active */
+main section {
+  display: none;  /* hide sections initially */
+  min-height: 300px;
+}
